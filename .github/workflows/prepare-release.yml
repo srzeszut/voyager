@@ -37,7 +37,7 @@ jobs:
         uses: anthropics/claude-code-action@v1
         with:
           github_token: ${{ github.token }}
-          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          claude_code_oauth_token: ${{ secrets.ANTHROPIC_API_KEY }}
           prompt: |
             Call the Skill tool with `changelog` NOW and follow it for the upcoming release ${{ inputs.version }}, dated today.
             Edit only CHANGELOG.md. Do not commit.

@@ -17,7 +17,7 @@ permissions:
 jobs:
   update:
     name: Update main
-    if: github.repository == 'software-mansion/voyager'
+    if: github.repository == 'srzeszut/voyager'
     runs-on: ubuntu-24.04
     timeout-minutes: 10
     env:

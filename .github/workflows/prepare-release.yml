@@ -15,7 +15,7 @@ permissions:
 jobs:
   prepare:
     name: Prepare release
-    if: github.repository == 'software-mansion/voyager'
+    if: github.repository == 'srzeszut/voyager'
     runs-on: ubuntu-24.04
     timeout-minutes: 30
     env:

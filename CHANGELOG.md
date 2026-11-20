@@ -1,5 +1,37 @@
 # Changelog
 
+## 0.3.0 (2026-11-20)
+
+#### Features
+
+* `create_trace_session` MCP tool: proposes a tracing session on the connected node, which starts only after the user accepts it in a form in [#343](https://github.com/software-mansion/voyager/pull/343), [#305](https://github.com/software-mansion/voyager/pull/305), [#300](https://github.com/software-mansion/voyager/pull/300)
+* Tracing session page with Start, Stop, Resume, Load, Unload and Delete controls in [#352](https://github.com/software-mansion/voyager/pull/352), [#351](https://github.com/software-mansion/voyager/pull/351), [#350](https://github.com/software-mansion/voyager/pull/350)
+* Saved tracing sessions persist in the database and can be loaded back in [#318](https://github.com/software-mansion/voyager/pull/318)
+* Active tracing session indicator in the top bar, linking to the session page in [#338](https://github.com/software-mansion/voyager/pull/338)
+* MCP tools to list saved connections, connect and disconnect in [#326](https://github.com/software-mansion/voyager/pull/326)
+* MCP tool to look up modules and functions on the connected node in [#323](https://github.com/software-mansion/voyager/pull/323), [#322](https://github.com/software-mansion/voyager/pull/322)
+* Display values in Erlang syntax, with a term syntax setting (Auto / Elixir / Erlang) where Auto follows the connected node in [#308](https://github.com/software-mansion/voyager/pull/308)
+* Run in background: closing the window keeps Voyager running, with a tray popover showing the node and MCP status, on macOS and Linux in [#288](https://github.com/software-mansion/voyager/pull/288), [#289](https://github.com/software-mansion/voyager/pull/289)
+* SSH key-file auth method, with an identity file picker and a passphrase prompt in [#307](https://github.com/software-mansion/voyager/pull/307), [#304](https://github.com/software-mansion/voyager/pull/304)
+* Support for passphrase-protected OpenSSH keys in [#331](https://github.com/software-mansion/voyager/pull/331)
+* Verify SSH host keys and prompt before trusting a new host in [#332](https://github.com/software-mansion/voyager/pull/332)
+* Warn about a changed SSH host key in a modal and offer to remove the old key in [#346](https://github.com/software-mansion/voyager/pull/346)
+
+#### Enhancements
+
+* Monitors and monitored-by in the supervision tree details panel in [#319](https://github.com/software-mansion/voyager/pull/319)
+* Back arrow on Settings, process info, ETS table and supervision tree pages that returns to the previous page in [#333](https://github.com/software-mansion/voyager/pull/333)
+* Custom agent socket path for SSH agent auth in [#330](https://github.com/software-mansion/voyager/pull/330)
+* SSH keepalive in [#312](https://github.com/software-mansion/voyager/pull/312)
+* Name the connector in the Connected label ("Connected via SSH" / "Connected directly") in [#310](https://github.com/software-mansion/voyager/pull/310)
+* Add the .deb Linux build back, with its own updater entry in [#311](https://github.com/software-mansion/voyager/pull/311)
+* Lower the minimum macOS version to 10.15 in [#289](https://github.com/software-mansion/voyager/pull/289)
+
+#### Bug fixes
+
+* Remove Cloak and update vulnerable dependencies; the connect page warns when saved secrets can't be decrypted in [#337](https://github.com/software-mansion/voyager/pull/337)
+* Fetch ETS table info on snapshot reload in [#296](https://github.com/software-mansion/voyager/pull/296)
+
 ## 0.2.0
 
 #### Features
